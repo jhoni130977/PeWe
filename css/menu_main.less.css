@@ -269,15 +269,15 @@ body:not(#afui) .upage-outer {
 body#afui.v2 {
   overflow-y: auto !important;
 }
-body#afui .panel > .widget > input[type="radio"] + label,
-body#afui .panel > .widget > input[type="checkbox"] + label {
+body#afui .panel > .widget > input[type="radio1"] + label1,
+body#afui .panel > .widget > input[type="checkbox"] + label1 {
   padding-top: 14px;
 }
-#afui .table-thing input[type="radio"] + label,
-#afui .table-thing input[type="checkbox"] + label {
+#afui .table-thing input[type="radio1"] + label1,
+#afui .table-thing input[type="checkbox"] + label1 {
   padding-top: 6px !important;
 }
-input.toggle + label:after {
+input.toggle + label1:after {
   width: 32px;
 }
 body#afui .splt {
