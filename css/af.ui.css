@@ -814,20 +814,20 @@ body {
     color:inherit;
 }
 
-#afui input.toggle+label1:after { color:inherit; }
+#afui input.toggle+label:after { color:inherit; }
 
-#afui input.toggle+label1 { border-radius:0; }
+#afui input.toggle+label { border-radius:0; }
 
-#afui input.toggle+label1 > span1 {
+#afui input.toggle+label > span {
     border-radius:0;
     top:0;
     width:27px;
     height:23px;
 }
 
-#afui label1 { color:inherit; }
+#afui label { color:inherit; }
 
-#afui input[type="radio1"]:checked+label1:before,#afui input[type="checkbox"]:checked+label1:before {
+#afui input[type="radio"]:checked+label:before,#afui input[type="checkbox"]:checked+label:before {
     background: #33B5E5;
 }
 
@@ -1071,12 +1071,12 @@ body {
 #afui form {
   position: relative;
 }
-#afui input[type="radio1"],
+#afui input[type="radio"],
 #afui input[type="checkbox"] {
   display: none;
 }
-#afui input[type="radio1"] + label1,
-#afui input[type="checkbox"] + label1 {
+#afui input[type="radio"] + label,
+#afui input[type="checkbox"] + label {
   display: inline-block;
   width: 60%;
   float: right;
@@ -1084,7 +1084,7 @@ body {
   text-align: left;
   padding: 10px 0 0 0;
 }
-#afui input[type="radio1"]:not(.toggle) + label1:before {
+#afui input[type="radio"]:not(.toggle) + label:before {
   background-color: #fafafa;
   border: 1px solid #cacece;
   border-radius: 50px;
@@ -1097,10 +1097,10 @@ body {
   top: 8px;
   margin-left: -25px;
 }
-#afui input[type="radio1"]:checked + label1:before {
+#afui input[type="radio"]:checked + label:before {
   background-color: #000000;
 }
-#afui input[type="checkbox"] + label1:before {
+#afui input[type="checkbox"] + label:before {
   background-color: #fafafa;
   border: 1px solid #cacece;
   border-radius: 3px;
@@ -1112,12 +1112,12 @@ body {
   height: 1.3em;
   content: " ";
 }
-#afui input[type="checkbox"]:checked + label1:before {
+#afui input[type="checkbox"]:checked + label:before {
   content: '\00a0\2714';
   padding: 0px;
   display: inline-block;
 }
-#afui input[type="radio1"]:after,
+#afui input[type="radio"]:after,
 #afui input[type="checkbox"]:after {
   visibility: hidden;
   display: block;
@@ -1129,7 +1129,7 @@ body {
 #afui input[type="search"] {
   border-radius: 20px;
 }
-#afui label1 {
+#afui label {
   float: left;
   width: 33%;
   font-weight: normal;
@@ -1138,24 +1138,24 @@ body {
   text-align: right;
   padding: 11px 6px;
 }
-#afui label1 + select,
-#afui label1 + input[type="radio1"],
-#afui label1 + input[type="checkbox"] label1 + textarea,
-#afui label1 + input[type="text"],
-#afui label1 + input[type=search],
-#afui label1 + input[type="password"],
-#afui label1 + input[type="datetime"],
-#afui label1 + input[type="datetime-local"],
-#afui label1 + input[type="date"],
-#afui label1 + input[type="month"],
-#afui label1 + input[type="time"],
-#afui label1 + input[type="week"],
-#afui label1 + input[type="number"],
-#afui label1 + input[type="email"],
-#afui label1 + input[type="url"],
-#afui label1 + input[type="tel"],
-#afui label1 + input[type="color"],
-#afui label1 + textarea {
+#afui label + select,
+#afui label + input[type="radio"],
+#afui label + input[type="checkbox"] label + textarea,
+#afui label + input[type="text"],
+#afui label + input[type=search],
+#afui label + input[type="password"],
+#afui label + input[type="datetime"],
+#afui label + input[type="datetime-local"],
+#afui label + input[type="date"],
+#afui label + input[type="month"],
+#afui label + input[type="time"],
+#afui label + input[type="week"],
+#afui label + input[type="number"],
+#afui label + input[type="email"],
+#afui label + input[type="url"],
+#afui label + input[type="tel"],
+#afui label + input[type="color"],
+#afui label + textarea {
   width: 66%;
 }
 #afui textarea {
@@ -1186,8 +1186,8 @@ body {
 #afui .input-group input[type=submit] {
   margin: 5px;
 }
-#afui input.toggle + label1:before,
-#afui input.toggle:checked + label1:before {
+#afui input.toggle + label:before,
+#afui input.toggle:checked + label:before {
   content: attr(data-on);
   position: absolute;
   color: #fff;
@@ -1203,10 +1203,10 @@ body {
   text-transform: uppercase;
   display: none;
 }
-#afui input.toggle:checked + label1:before {
+#afui input.toggle:checked + label:before {
   display: block;
 }
-#afui input.toggle + label1:after {
+#afui input.toggle + label:after {
   content: attr(data-off);
   position: absolute;
   color: #505050;
@@ -1221,13 +1221,13 @@ body {
   border-radius: 0px;
   text-transform: uppercase;
 }
-#afui input.toggle:checked + label1:after {
+#afui input.toggle:checked + label:after {
   display: none;
 }
-#afui input[type="radio1"].toggle:checked + label1:before {
+#afui input[type="radio"].toggle:checked + label:before {
   line-height: 1.2em;
 }
-#afui input.toggle + label1 {
+#afui input.toggle + label {
   position: relative;
   margin: 5px;
   border-radius: 50px;
@@ -1238,11 +1238,11 @@ body {
   left: 33%;
   float: none;
 }
-#afui input.toggle:checked + label1 {
+#afui input.toggle:checked + label {
   background: #1eb0e9;
   line-height: -1em;
 }
-#afui input.toggle + label1 > span1 {
+#afui input.toggle + label > span {
   display: block;
   width: 28px;
   height: 28px;
@@ -1257,7 +1257,7 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform 100ms linear;
 }
-#afui input.toggle:checked + label1 > span1 {
+#afui input.toggle:checked + label > span {
   transform: translate3d(37px, 0, 0);
   -webkit-transform: translate3d(37px, 0, 0);
 }
@@ -1664,20 +1664,20 @@ body {
 	color:inherit;
 }
 
-#afui.android input.toggle+label1:after { color:inherit; }
+#afui.android input.toggle+label:after { color:inherit; }
 
-#afui.android input.toggle+label1 { border-radius:0; }
+#afui.android input.toggle+label { border-radius:0; }
 
-#afui.android input.toggle+label1 > span1 {
+#afui.android input.toggle+label > span {
 	border-radius:0;
 	top:0;
 	width:27px;
 	height:23px;
 }
 
-#afui.android label1 { color:inherit; }
+#afui.android label { color:inherit; }
 
-#afui.android input[type="radio1"]:checked+label1:before,#afui.android input[type="checkbox"]:checked+label1:before {
+#afui.android input[type="radio"]:checked+label:before,#afui.android input[type="checkbox"]:checked+label:before {
 	background: #33B5E5;
 }
 
@@ -2074,26 +2074,26 @@ body {
     background:white;
 }
 
-#afui.win8 input.toggle+label1:after {
+#afui.win8 input.toggle+label:after {
 	color:inherit;
 }
 
-#afui.win8 input.toggle+label1 {
+#afui.win8 input.toggle+label {
 	border-radius:0;
 }
 
-#afui.win8 input.toggle:checked+label1 {
+#afui.win8 input.toggle:checked+label {
 	background:#00ABA9;
 }
 
-#afui.win8 input.toggle+label1 > span1 {
+#afui.win8 input.toggle+label > span {
 	border-radius:0;
 	top:0;
 	width:27px;
 	height:23px;
 }
 
-#afui.win8 input[type="radio1"]:checked+label1:before,#afui.win8 input[type="checkbox"]:checked+label1:before {
+#afui.win8 input[type="radio"]:checked+label:before,#afui.win8 input[type="checkbox"]:checked+label:before {
 	background: #00ABA9;
 }
 
