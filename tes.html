@@ -1,76 +1,324 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<!-- saved from url=(0042)https://www.tutorialspoint.com/webpage.php -->
+<html class="pixel-ratio-1 watch-active-state"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width = device-width, initial-scale = 1, 
+         maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <title>Show Tabs Events </title>
 
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="theme-color" content="#2196f3">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-  <title>My App</title>
+	  <link rel = "stylesheet" href = "framework7/css/framework7.material.min.css" />
+	  <script src="js/nilai.js"></script>
+	  	  <script>
+		function video(){  
+			window.location='https://www.youtube.com/watch?v=GeOpiyJ00qM&list=PLFLsT6z_5FzkCGDGpg-Qc_Ydw7X1d9aRl target=_blank';
+        return false;
+					}
+		</script>
+   </head>
 
-  <link rel="stylesheet" href="framework7/css/framework7.min.css">
-  <script src="framework7/js/framework7.min.js"></script>
-    <script src="js1/routes.js"></script>
-  <script src="js1/app.js"></script>
+   <body>
+      <div class="views">
+         <div class="view view-main" data-page="home">
+            <div class="pages">
+               <div data-page="home" class="page navbar-fixed">
+                  
+                  <div class="navbar">
+                     <div class="navbar-inner">
+                        <div class="left"> </div>
+                        <div class="center" style="left: 0px;">Evaluasi</div>
+                        <div class="right"> </div>
+                     </div>
+                  </div>                  
+                  <div class="page-content">                     
+                     
 
-</head>
-<body>
-  <div id="app">
-    <div class="block-title"><font size=4>HTML merupakan singkatan dari ....</div>
-    <div class="list">
-      <ul>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Books" checked="checked"/>
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Home Tool  Markup Language</div>
-            </div>
-          </label>
+                        <div  class="tab active">
+                           <div class="content-block">
+							<table border=0>
+							<tr><td valign=top>1.<td> Soal evaluasi sebanyak 10 soal, masing-masing soal terdiri dari 5 pilihan jawaban.<p></td></tr>
+							<tr><td valign=top>2.<td> Jika jawaban telah dipilih, maka tidak bisa lagi mimilih jawaban yang lain.<p></td></tr>
+							<tr><td valign=top>3<td> Tombol untuk ke soal berikutnya akan tampil jika sudah memilih salah satu jawaban.<p></td></tr>
+							<tr><td valign=top colspan=2><b>Selamat mengerjakan, semoga sukses.</td></tr>
+							</table><br>
+							<a href="#" class="s1" ><button class='col button button-fill' >Mulai Ujian</button></a><p><a onClick="video()" ><button class='col button button-fill' >Video</button></a>
+                           </div>
+                        </div>
+
+	<!-- ------------------------------------------------------------------------------------------------------------- -->
+	<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+                        <div id="s1" class="tab"> 
+							  <div class = "content-block-inner">
+						<div class = "list-block">
+						  <div class="block-title"><h5>&nbsp;&nbsp;&nbsp;HTML merupakan singkatan dari ....</div><h5>
+                        <ul>  
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="1a" name='a' value='a' onclick="displayResult(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Home Tool Markup Language</div>
+				  </div>
+			</label>
         </li>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Movies"/>
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Hyperlinks and Text Markup Language</div>
-            </div>
-          </label>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="1b" name='a' value='b' onclick="displayResult(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Hyperlinks and Text Markup Language</div>
+				  </div>
+			</label>
         </li>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Food"/>
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Hyper Text Markup Language</div>
-            </div>
-          </label>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="1c" name='a' value='c' onclick="displayResult(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Hyper Text Markup Language</div>
+				  </div>
+			</label>
         </li>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Drinks"/>
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Hyper Tool Markup Language</div>
-            </div>
-          </label>		  
-        </li><li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Drinks"/>
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Hyper Tricks Markup Language</div>
-            </div>
-          </label>		  
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="1d" name='a' value='d' onclick="displayResult(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Hyper Tool Markup Language</div>
+				  </div>
+			</label>
         </li>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="1e" name='a' value='e' onclick="displayResult(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Hyper Tricks Markup Language</div>
+				  </div>
+			</label>
+        </li>		
       </ul>
-    </div>
-  </div>
-</div>
-</div>
-</body>
-</html>
+          <div class="content-block"><p>
+		  <a href="#" class="s2" id="bb1"></a> 
+		  
+                           </div>
+                        </div> <input type="text" id="hs1">
+						</div>
+                        </div>
+  
+<!-- -------------------------------------------------------------------------------------------------- -->					<!-- -------------------------------------------------------------------------------------------------- -->	
+
+                        <div id="s2" class="tab"> 
+							  <div class = "content-block-inner">
+						<div class = "list-block">
+						  <div class="block-title"><h5>&nbsp;&nbsp;&nbsp;Siapa yang mengembangkan Sejarah Web pertama kali ...</div><h5>
+                        <ul>  
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="2a" name='b' value='a2' onclick="displayResult2(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Ruben</div>
+				  </div>
+			</label>
+        </li>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="2b" name='b' value='b2' onclick="displayResult2(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Thomas Alpha Edison</div>
+				  </div>
+			</label>
+        </li>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="2c" name='b' value='c2' onclick="displayResult2(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Tim Berners-Lee</div>
+				  </div>
+			</label>
+        </li>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="2d" name='b' value='d2' onclick="displayResult2(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Albert Einstein</div>
+				  </div>
+			</label>
+        </li>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="2e" name='b' value='e2' onclick="displayResult2(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Steward</div>
+				  </div>
+			</label>
+        </li>		
+      </ul>
+          <div class="content-block"><p>
+		  <a href="#" class="s3" id="cc1"></a> 
+                           </div>
+                        </div><input type=text id=hss1><input type=text id=hs2>
+						</div>
+                        </div>
+  
+<!-- -------------------------------------------------------------------------------------------------- -->					<!-- -------------------------------------------------------------------------------------------------- -->	                  
+  
+                        <div id="s3" class="tab"> 
+							  <div class = "content-block-inner">
+						<div class = "list-block">
+						  <div class="block-title"><h5>&nbsp;&nbsp;&nbsp;Profesi dalam pengembangan web, kecuali ...</div><h5>
+                        <ul>  
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="3a" name='c' value='a3' onclick="displayResult3(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Web Developer</div>
+				  </div>
+			</label>
+        </li>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="3b" name='c' value='b3' onclick="displayResult3(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Web Programer</div>
+				  </div>
+			</label>
+        </li>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="3c" name='c' value='c3' onclick="displayResult3(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Web Designer</div>
+				  </div>
+			</label>
+        </li>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="3d" name='c' value='d3' onclick="displayResult3(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Web Administrator</div>
+				  </div>
+			</label>
+        </li>
+
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="3e" name='c' value='e3' onclick="displayResult3(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Web Browser</div>
+				  </div>
+			</label>
+        </li>		
+      </ul>
+          <div class="content-block"><p>
+		  <a href="#" class="s4" id="dd1"></a> 
+		  <input type=text id=hs3>
+		  <span type=text id=hss></span>
+		  
+                           </div>
+                        </div> </div>
+                        </div>
+  
+<!-- -------------------------------------------------------------------------------------------------- -->					<!-- -------------------------------------------------------------------------------------------------- -->	
+<div id="s4" class="tab">
+                           <div class="content-block">
+                              <p>This is tab 3 content</p>
+                              
+                              <p> <a href="#" class="s1">Show Tab 1</a></p>
+							  <ul>  
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="10a" name='j' value='a10' onclick="displayResult10(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Web Developer</div>
+				  </div>
+			</label>
+        </li>
+		<li>
+            <label class = "label-radio item-content">
+              <input type="radio" id="10b" name='j' value='b10' onclick="displayResult10(this.value)">
+               <div class = "item-media"><i class="icon icon-form-radio"></i></div>
+				  <div class="item-inner">
+					<div class="item-title">Web Developer 1</div>
+				  </div>
+			</label>
+        </li>
+		</ul>
+                              
+                              <p>Nulla gravida libero eget lobortis iaculis. In sed elit 
+                                 eu nibh adipiscing faucibus. Sed ac accumsan lacus. In ut diam quis 
+                                 turpis fringilla volutpat. In ultrices  dignissim consequat. Cras 
+                                 pretium tortor et lorem condimentum posuere. Nulla facilisi. Suspendisse 
+                                 pretium egestas lacus ac laoreet. Mauris rhoncus quis ipsum quis tristique. 
+                                 Vivamus ultricies urna quis nunc egestas, in euismod turpis fringilla. Nam 
+                                 tellus massa, vehicula eu sapien non, dapibus tempor lorem. Fusce placerat 
+                                 orci arcu, eu dignissim  enim porttitor vel. Nullam porttitor vel dolor sed 
+                                 feugiat. Suspendisse potenti.  Maecenas ac mattis odio. Sed vel ultricies 
+                                 lacus, sed posuere libero.</p>
+
+								 <div id="nnn"></div>
+								 <input type=text id=hs10>
+                           </div>
+                        </div>
+                        
+ 
+      
+      <script type="text/javascript" src="./framework7.min.js.download"></script>
+         
+      <script>
+         // here initialize the app
+         var myApp = new Framework7();
+
+         // If your using custom DOM library, then save it to $$ variable
+         var $$ = Dom7;
+
+         // Add the view
+         var mainView = myApp.addView('.view-main', {
+            // enable the dynamic navbar for this view:
+            dynamicNavbar: true
+         });
+
+
+         $$('.s1').on('click', function () {
+            myApp.showTab('#s1');
+         });
+         
+         $$('.s2').on('click', function () {
+            myApp.showTab('#s2');
+         });
+         
+         $$('.s3').on('click', function () {
+            myApp.showTab('#s3');
+         });
+
+		 $$('.s4').on('click', function () {
+            myApp.showTab('#s4');
+         });
+      </script>
+   
+
+
+</body></html>
