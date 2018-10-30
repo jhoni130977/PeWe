@@ -7,7 +7,8 @@
  document.getElementById("1d").disabled=true;
  document.getElementById("1e").disabled=true;
 
- document.getElementById("b1").disabled=false;
+ //document.getElementById("b1").disabled=false;
+ document.getElementById("bb1").innerHTML="<button class='col button button-fill' value=Soal>Soal Selanjutnya</button>";
  
  if(a == "a")
  { //document.getElementById("hb").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>Hypert Text Markup Language "; 
@@ -34,7 +35,10 @@
  document.getElementById("3c").disabled=true;
  document.getElementById("3d").disabled=true;
  document.getElementById("3e").disabled=true;
- document.getElementById("b3").disabled=false;
+
+ document.getElementById("dd1").innerHTML="<button class='col button button-fill' value=Soal>Soal Selanjutnya</button>";
+
+  document.getElementById("nl").innerHTML = hs2;
  
  if(c == "a3")
  { //document.getElementById("hb").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>Hypert Text Markup Language "; 
@@ -52,6 +56,25 @@
  if(c == "e3")
  { //document.getElementById("hb").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>Hypert Text Markup Language "; 
  document.getElementById("hs3").value="1";}
+
+var hs1a = document.getElementById("hs1").value;
+ var hs2a = document.getElementById("hs2").value;
+ hsl = parseInt(hs1a) + parseInt(hs2a) ;
+
+ //hsl = parseInt(hs1a) + parseInt(hs2a) + parseInt(hs3a) + parseInt(hs4a) + parseInt(hs5a) + parseInt(hs6a) + parseInt(hs7a);
+
+ nilai = (hsl/10) * 100;
+ slh =  10-hsl;
+
+ //nn = hs1a + hs2a + hs3a;
+
+ document.getElementById("hss").innerHTML = hsl;
+ document.getElementById("salah").innerHTML = slh;
+
+
+
+
+
 }
 
 		function displayResult4(d){ 
@@ -61,7 +84,8 @@
  document.getElementById("4c").disabled=true;
  document.getElementById("4d").disabled=true;
  document.getElementById("4e").disabled=true;
- document.getElementById("b4").disabled=false;
+
+ document.getElementById("ee1").innerHTML="<button class='col button button-fill' value=Soal>Soal Selanjutnya</button>";
  
  if(d == "a4")
  { //document.getElementById("hb").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>Hypert Text Markup Language "; 
@@ -88,7 +112,8 @@
  document.getElementById("5c").disabled=true;
  document.getElementById("5d").disabled=true;
  document.getElementById("5e").disabled=true;
- document.getElementById("b5").disabled=false;
+
+ document.getElementById("ff1").innerHTML="<button class='col button button-fill' value=Soal>Soal Selanjutnya</button>";
  
  if(e == "a5")
  { //document.getElementById("hb").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>Hypert Text Markup Language "; 
@@ -113,7 +138,8 @@
  document.getElementById("6c").disabled=true;
  document.getElementById("6d").disabled=true;
  document.getElementById("6e").disabled=true;
- document.getElementById("b6").disabled=false;
+
+ document.getElementById("gg1").innerHTML="<button class='col button button-fill' value=Soal>Soal Selanjutnya</button>";
  
  if(f == "a6")
  { //document.getElementById("hb").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>Hypert Text Markup Language "; 
@@ -139,7 +165,8 @@
  document.getElementById("7c").disabled=true;
  document.getElementById("7d").disabled=true;
  document.getElementById("7e").disabled=true;
- document.getElementById("b7").disabled=false;
+
+ document.getElementById("hh1").innerHTML="<button class='col button button-fill' value=Soal>Soal Selanjutnya</button>";
  
  if(g == "a7")
  { //document.getElementById("hb").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>Hypert Text Markup Language "; 
@@ -165,7 +192,8 @@
  document.getElementById("8c").disabled=true;
  document.getElementById("8d").disabled=true;
  document.getElementById("8e").disabled=true;
- document.getElementById("b8").disabled=false;
+
+ document.getElementById("ii1").innerHTML="<button class='col button button-fill' value=Soal>Soal Selanjutnya</button>";
  
  if(h == "a8")
  { //document.getElementById("hb").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>Hypert Text Markup Language "; 
@@ -191,7 +219,8 @@
  document.getElementById("9c").disabled=true;
  document.getElementById("9d").disabled=true;
  document.getElementById("9e").disabled=true;
- document.getElementById("b9").disabled=false;
+
+ document.getElementById("jj1").innerHTML="<button class='col button button-fill' value=Soal>Soal Selanjutnya</button>";
  
  if(i == "a9")
  { //document.getElementById("hb").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>Hypert Text Markup Language "; 
@@ -217,7 +246,8 @@
  document.getElementById("10c").disabled=true;
  document.getElementById("10d").disabled=true;
  document.getElementById("10e").disabled=true;
- document.getElementById("b10").disabled=false;
+
+ document.getElementById("kk1").innerHTML="<button class='col button button-fill' value=Soal>Soal Selanjutnya</button>";
  
  if(j == "a10")
  { //document.getElementById("hb").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>Hypert Text Markup Language "; 
@@ -252,9 +282,12 @@
  nilai = (hsl/10) * 100;
  slh =  10-hsl;
 
+ //nn = hs1a + hs2a + hs3a;
+
  document.getElementById("hss").innerHTML = hsl;
  document.getElementById("salah").innerHTML = slh;
  document.getElementById("nl").innerHTML = nilai;
+ //document.getElementById("nnn").innerHTML = nn;
 }
 
 function displayResult2(b){ 
@@ -263,7 +296,9 @@ function displayResult2(b){
  document.getElementById("2c").disabled=true;
  document.getElementById("2d").disabled=true;
  document.getElementById("2e").disabled=true;
- document.getElementById("b2").disabled=false;
+ //document.getElementById("b2").disabled=false;
+
+ document.getElementById("cc1").innerHTML="<button class='col button button-fill' value=Soal>Soal Selanjutnya</button>";
  
  if(b == "a2")
  { //document.getElementById("hc").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>cascading ";
@@ -282,5 +317,8 @@ function displayResult2(b){
  { //document.getElementById("hc").innerHTML="jawaban anda Salah<br>yang benar adalah <b>E </b> yaitu <b>cascading Language ";
  document.getElementById("hs2").value="0";}
 
+ var hs1z = document.getElementById("hs1").value;
+ hslz = parseInt(hs1z);
 
+document.getElementById("hss1").value=hslz;
 }
