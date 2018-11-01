@@ -10,14 +10,30 @@
 		<script type="application/javascript" src="js/index_user_scripts.js"></script>
 		<script src="cordova.js" id="xdkJScordova_"></script>
 		<script>
-		function proses5(){   
-   
-
- window.location='tes.html';
+		function proses5(){  
+			window.location='tes.html';
+		//	window.location='cradio.html#page1';
         return false;
-    
-}
-</script>
+					}
+		</script>
+
+		<script>
+		function evaluasi(){  
+			window.location='https://belajar.kemdikbud.go.id/KelasMaya/';		
+        return false;
+					}
+		</script>
+
+		<script>
+		function video(){  
+			window.location='video.html';
+        return false;
+					}
+		function program(){  
+			window.location='program.html';
+        return false;
+					}
+		</script>
 
         <!--
     This template can be used for simple app with left side menu that can be opened to switch views, for applications like Youtube App or Gmail app.
@@ -61,10 +77,6 @@ function proses2(){
         <script type="text/javascript" charset="utf-8" src="js/appframework.ui.min.js"></script>
         <!--AppFramework plugin for sliding side menu-->
         <script type="text/javascript" charset="utf-8" src="js/af.slidemenu.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/radio.css">
-		<link rel="stylesheet" type="text/css" href="css/radio1.css">
-        <script type="text/javascript" charset="utf-8" src="js/nilai.js"></script>
-	<link rel = "stylesheet" href = "framework7/css/framework7.material.min.css" />
 
         <!-- Required if packaging to native app using Intel XDK -->
         <script src="intelxdk.js"></script>
@@ -155,49 +167,7 @@ function proses2(){
             }
         </script>
 
-               <script>
-            $(document).ready(function(){
-            
-               
-                var IDNE = parse("ID");
-               $.post("http://localhost/server/get_user2.php?ID="+IDNE,function(response){
-                
-                 //alert(JSON.stringify(response));                   
-                    
-                    var arr = $.parseJSON(response); 
-                    var trHTML = '';
-                    var nom = parseInt(1);
-
-                    trHTML += 'Selamat Datang ';
-                     $.each(arr, function(ix, nilai){
-                      trHTML += arr[ix].NAMA });
-                     $('#datane1').append(trHTML).listview("refresh");
-                         
-               });
-            
-          });
-
-
-
-
-    function parse(val) {
-    
-    var result = "Not found",
-        tmp = [];
-    location.search
-    //.replace ( "?", "" ) 
-    // this is better, there might be a question mark inside
-    .substr(1)
-        .split("&")
-        .forEach(function (item) {
-        tmp = item.split("=");
-        if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
-    });
-    return result;
-}
-                
-
-        </script>
+       
      </head>
 
      <body class="ios">
@@ -211,11 +181,11 @@ function proses2(){
                     </li>
                     <li><a href="#page2" class="icon paper">Materi</a>
                     </li>
-					<li><a href="#page7" class="icon calendar">Video Tutorial</a>
+					<li><a onclick="video()" class="icon calendar">Video Tutorial</a>
                     </li>
-                    <li><a href="#page3" class="icon calendar">Program</a>
+                    <li><a onclick="program()" class="icon calendar">Program</a>
                     </li>
-					<li><a href="#page8" class="icon calendar">Evaluasi</a>
+					<li><a onclick="evaluasi()" class="icon calendar">Evaluasi</a>
                     </li>
                     <li><a href="#page4" class="icon user">Tentang Saya</a>
                     </li>
@@ -277,7 +247,7 @@ function proses2(){
                          <div title="Title" id="listview" data-footer="none" selected="true">
             <ul class="list">
                 <li><a href="#item1a">&nbsp;&nbsp;Evaluasi 1</a></li>
-				<li> <a class="widget uib_w_7 d-margins" onClick="proses5()">data 1</li>
+				<li> <a onClick="proses5()">data 1</li>
                 <li><a href="#item2a">&nbsp;&nbsp;Evaluasi 2</a></li>
                 <li><a href="#item3a">&nbsp;&nbsp;Evaluasi 3</a></li>
                 <li><a href="#item4a">&nbsp;&nbsp;Evaluasi 4</a></li>
@@ -307,10 +277,8 @@ function proses2(){
 		<b>HTML merupakan singkatan dari ....</b></td><br>
 		
 		<tr>
-		<td height=30><input type=radio id="1a" name='a' value='a' onclick="displayResult(this.value)">
-		<label for='1a'><span><center>A</center></span></label>
-		&nbsp;&nbsp;Home Tool  Markup Language
-			<label class = "label-radio item-content">
+		<td height=30>
+		<label class = "label-radio item-content">
               <input type="radio" id="1a" name='a' value='a' onclick="displayResult(this.value)">
                <div class = "item-media"><i class="icon icon-form-radio"></i></div>
 				  <div class="item-inner">
