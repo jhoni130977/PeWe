@@ -154,23 +154,20 @@ function proses2(){
         <script type="application/javascript" src="js/themeRelease.js"></script>
         <script src="cordova.js"></script>
         <script type="text/javascript">
-            function keluar() {
-                //close();
-                //opener.window.focus();
-                //return false;
-                confirm('yakin ingin keluar?',exitFromApp,'exit','Cancel,OK');
-            }
-            function exitFromApp(bi){
-                if (bi==2){
-                    navigator.app.exitApp();
-                }
-            }
+			function onLoad()
+				{
+					  document.addEventListener("deviceready", onDeviceReady, true);
+				}
+				function exitFromApp()
+				 {
+					navigator.app.exitApp();
+				 }
         </script>
 
        
      </head>
 
-     <body class="ios">
+     <body class="ios" onload="onLoad();">
 
         <div id="afui">
 
@@ -192,6 +189,8 @@ function proses2(){
                     <li><a href="#page5" class="icon message">Kritik/ Saran/ Komentar</a>
                     </li>
                     <li><a href="#page6" class="icon question">Bantuan</a>
+                    </li>
+					<li><a onclick="exitFromApp()" class="icon logout"><b>>></b> Keluar</a>
                     </li>
 				</ul>
             </nav>
