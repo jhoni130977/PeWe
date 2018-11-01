@@ -21,6 +21,12 @@
         document.getElementById('hasil').innerHTML = "";
         }
 		</script>
+		<script>
+		function kembali(){  
+			window.location='index.html';		
+        return false;
+					}
+		</script>
 <style>
 .tombolm {
    padding: 7px 12px;
@@ -39,9 +45,6 @@ textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-	
-  
-
     width: 100%;
 }
 
@@ -56,8 +59,8 @@ textarea {
                   
                   <div class="navbar">
                      <div class="navbar-inner">
-                        <div class="left"> </div>
-                        <div class="center" style="left: 0px;">Program</div>
+                        <div class="left" onClick="kembali()" >&nbsp;&nbsp;<</div>
+                        <div class="center" style="left: 80px;">Program</div>
                         <div class="right"> </div>
                      </div>
                   </div>                  
