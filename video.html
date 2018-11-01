@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://www.tutorialspoint.com/webpage.php -->
+<html class="pixel-ratio-1 watch-active-state"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width = device-width, initial-scale = 1, 
+         maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <title>Show Tabs Events </title>
+
+	  <link rel = "stylesheet" href = "framework7/css/framework7.material.min.css" />
+	  <script src="js/nilai1.js"></script>
+	  	  <script>
+		function video1(){  
+			window.location='https://www.youtube.com/watch?v=GeOpiyJ00qM&list=PLFLsT6z_5FzkCGDGpg-Qc_Ydw7X1d9aRl';
+        return false;
+					}
+		function video2(){  
+			window.location='https://www.youtube.com/watch?v=3sLSi9L5nWE&index=3&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F';
+        return false;
+					}
+		function video3(){  
+			window.location='https://www.youtube.com/watch?v=MD25oD3Whxk';
+        return false;
+					}
+		</script>
+
+
+   </head>
+
+   <body>
+      <div class="views">
+         <div class="view view-main" data-page="home">
+            <div class="pages">
+               <div data-page="home" class="page navbar-fixed">
+                  
+                  <div class="navbar">
+                     <div class="navbar-inner">
+                        <div class="left"> </div>
+                        <div class="center" style="left: 0px;">Video Tutorial</div>
+                        <div class="right"> </div>
+                     </div>
+                  </div>                  
+                  <div class="page-content">                     
+                     
+					<div  class="tabs">
+                        <div  class="tab active">
+                           <div class="content-block">
+							<table border=0>
+							<tr><td valign=top><td> <center><a onclick="video1()"><img src="html1.png" height=137></a></td></tr>
+							<tr><td valign=top><td> <center>Silahkan Klik gambar di atas untuk melihat Video Tutorial 1.<p></td></tr>
+							<tr><td valign=top><td> <center><a onclick="video2()"><img src="html.jpg" height=120></a></td></tr>
+							<tr><td valign=top><td> <center>Silahkan Klik gambar di atas untuk melihat Video Tutorial 2.<p></td></tr>
+							<tr><td valign=top><td> <center><a onclick="video3()"><img src="html3.png" height=150></a></td></tr>
+							<tr><td valign=top><td> <center>Silahkan Klik gambar di atas untuk melihat Video Tutorial 3.<p></td></tr>
+							</table><br>
+							</div>
+                        </div>
+
+	<!-- ------------------------------------------------------------------------------------------------------------- -->
+	<!-- ------------------------------------------------------------------------------------------------------------- -->
+                             </div>
+                        </div>
+                        
+ 
+      
+      <script type="text/javascript" src="framework7/js/framework7.min.js.download"></script>
+         
+      <script>
+         // here initialize the app
+         var myApp = new Framework7();
+
+         // If your using custom DOM library, then save it to $$ variable
+         var $$ = Dom7;
+
+         // Add the view
+         var mainView = myApp.addView('.view-main', {
+            // enable the dynamic navbar for this view:
+            dynamicNavbar: true
+         });
+
+
+         $$('.s1').on('click', function () {
+            myApp.showTab('#s1');
+         });
+         
+         $$('.s2').on('click', function () {
+            myApp.showTab('#s2');
+         });
+         
+         $$('.s3').on('click', function () {
+            myApp.showTab('#s3');
+         });
+
+		 $$('.s4').on('click', function () {
+            myApp.showTab('#s4');
+         });
+      </script>
+   
+
+
+</body></html>

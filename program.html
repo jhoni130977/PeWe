@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://www.tutorialspoint.com/webpage.php -->
+<html class="pixel-ratio-1 watch-active-state"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width = device-width, initial-scale = 1, 
+         maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <title>Show Tabs Events </title>
+
+	  <link rel = "stylesheet" href = "framework7/css/framework7.material.min.css" />
+	  <link rel = "stylesheet" href = "framework7/css/framework7.material.color.min.css" />
+
+	  <script src="js/nilai1.js"></script>
+	  	  <script>
+	function proses() {
+        var hs = document.getElementById('ta').value;
+        document.getElementById('hasil').innerHTML = hs;
+        }
+        function bersih() {
+        document.getElementById('ta').value = "";
+        document.getElementById('hasil').innerHTML = "";
+        }
+		</script>
+<style>
+.tombolm {
+   padding: 7px 12px;
+   background: #ff3e3e;
+   display: table;
+   color: #ffffff;
+   border-radius: 10px;
+}
+.tombolh {
+   padding: 7px 12px;
+   background: #3eff3e;
+   display: table;
+   border-radius: 10px;
+}
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	
+  
+
+    width: 100%;
+}
+
+</style>
+   </head>
+
+   <body>
+      <div class="views">
+         <div class="view view-main" data-page="home">
+            <div class="pages">
+               <div data-page="home" class="page navbar-fixed">
+                  
+                  <div class="navbar">
+                     <div class="navbar-inner">
+                        <div class="left"> </div>
+                        <div class="center" style="left: 0px;">Program</div>
+                        <div class="right"> </div>
+                     </div>
+                  </div>                  
+                  <div class="page-content">                     
+                     
+					<div  class="tabs">
+                        <div  class="tab active">
+                           <div class="content-block">
+							<table width=100%><tr><td><div class="tombolh"  onClick="proses()" value="RUN">RUN</td>
+                    <td align="right"><div class="tombolm"  onClick="bersih()">CLEAR</td></tr></table>
+                    <div >
+                
+                <textarea rows="15" id="ta" ></textarea>
+            </div>
+            <hr><br>
+            <div id="hasil"></div> <br>
+							
+                           </div>
+                        </div>
+
+	<!-- ------------------------------------------------------------------------------------------------------------- -->
+	<!-- ------------------------------------------------------------------------------------------------------------- -->
+                             </div>
+                        </div>
+                        
+ 
+      
+      <script type="text/javascript" src="framework7/js/framework7.min.js"></script>
+         
+      <script>
+         // here initialize the app
+         var myApp = new Framework7();
+
+         // If your using custom DOM library, then save it to $$ variable
+         var $$ = Dom7;
+
+         // Add the view
+         var mainView = myApp.addView('.view-main', {
+            // enable the dynamic navbar for this view:
+            dynamicNavbar: true
+         });
+
+
+         $$('.s1').on('click', function () {
+            myApp.showTab('#s1');
+         });
+         
+         $$('.s2').on('click', function () {
+            myApp.showTab('#s2');
+         });
+         
+         $$('.s3').on('click', function () {
+            myApp.showTab('#s3');
+         });
+
+		 $$('.s4').on('click', function () {
+            myApp.showTab('#s4');
+         });
+      </script>
+   
+
+
+</body></html>
